@@ -2,7 +2,7 @@
 
 This week focuses on learning **GSAP (GreenSock Animation Platform)** to create smooth, engaging, and professional web animations. The projects gradually introduce animation concepts ranging from basic motion to interactive scroll-based experiences.
 
----
+
 
 ## Projects
 
@@ -12,7 +12,7 @@ A simple project exploring the core GSAP animation methods and learning how elem
 
 **Status:** 🚧 Coming Soon
 
----
+
 
 ### Project 2 – Animated Hero Section *(Coming Soon)*
 
@@ -20,7 +20,7 @@ A modern hero section featuring clean entrance animations that make the landing 
 
 **Status:** 🚧 Coming Soon
 
----
+
 
 ### Project 3 – Timeline Animations *(Coming Soon)*
 
@@ -28,7 +28,7 @@ A project demonstrating how multiple animations can be coordinated to create smo
 
 **Status:** 🚧 Coming Soon
 
----
+
 
 ### Project 4 – Scroll Reveal Effects *(Coming Soon)*
 
@@ -36,7 +36,7 @@ A responsive webpage showcasing animations that are triggered as users scroll th
 
 **Status:** 🚧 Coming Soon
 
----
+
 
 ### Project 5 – Animated Landing Page *(Coming Soon)*
 
@@ -44,7 +44,7 @@ A complete landing page combining various GSAP techniques to create a polished a
 
 **Status:** 🚧 Coming Soon
 
----
+
 
 ## Learning Outcome
 
