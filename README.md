@@ -6,11 +6,23 @@ This week focuses on learning **GSAP (GreenSock Animation Platform)** to create 
 
 ## Projects
 
-### Project 1 – GSAP Basics *(Coming Soon)*
+### Project 1 – GSAP Basics Playground
 
-A simple project exploring the core GSAP animation methods and learning how elements can move, rotate, scale, and fade smoothly.
+A beginner-friendly project focused on learning the core GSAP animation methods by creating simple animations with a single element. This project builds a strong foundation in JavaScript-based animations by exploring movement, timing, easing, and transform properties.
 
-**Status:** 🚧 Coming Soon
+### Concepts Practiced
+
+- `gsap.to()`
+- `gsap.from()`
+- `gsap.fromTo()`
+- Duration
+- Delay
+- Ease Functions
+- Translation (`x`, `y`)
+- Rotation
+- Scale
+- Opacity
+- CSS Transforms with GSAP
 
 
 
