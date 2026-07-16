@@ -1,0 +1,252 @@
+/* @link https://utopia.fyi/space/calculator?c=320,14,1.2,1600,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --space-3xs: clamp(0.25rem, 0.2344rem + 0.0781vw, 0.3125rem);
+    --space-2xs: clamp(0.4375rem, 0.3906rem + 0.2344vw, 0.625rem);
+    --space-xs: clamp(0.6875rem, 0.625rem + 0.3125vw, 0.9375rem);
+    --space-s: clamp(0.875rem, 0.7813rem + 0.4688vw, 1.25rem);
+    --space-m: clamp(1.3125rem, 1.1719rem + 0.7031vw, 1.875rem);
+    --space-l: clamp(1.75rem, 1.5625rem + 0.9375vw, 2.5rem);
+    --space-xl: clamp(2.625rem, 2.3438rem + 1.4063vw, 3.75rem);
+    --space-2xl: clamp(3.5rem, 3.125rem + 1.875vw, 5rem);
+    --space-3xl: clamp(5.25rem, 4.6875rem + 2.8125vw, 7.5rem);
+
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.25rem, 0.1563rem + 0.4688vw, 0.625rem);
+    --space-2xs-xs: clamp(0.4375rem, 0.3125rem + 0.625vw, 0.9375rem);
+    --space-xs-s: clamp(0.6875rem, 0.5469rem + 0.7031vw, 1.25rem);
+    --space-s-m: clamp(0.875rem, 0.625rem + 1.25vw, 1.875rem);
+    --space-m-l: clamp(1.3125rem, 1.0156rem + 1.4844vw, 2.5rem);
+    --space-l-xl: clamp(1.75rem, 1.25rem + 2.5vw, 3.75rem);
+    --space-xl-2xl: clamp(2.625rem, 2.0313rem + 2.9688vw, 5rem);
+    --space-2xl-3xl: clamp(3.5rem, 2.5rem + 5vw, 7.5rem);
+
+    /* Custom pairs */
+    --space-s-l: clamp(0.875rem, 0.4688rem + 2.0313vw, 2.5rem);
+
+    /*Colors*/
+
+    /* -- Raw Palette Colors -- */
+    --hot-fuchsia: #FF1053;
+    --dusty-grape: #6C6EA0;
+    --sky-blue: #66C7F4;
+    --pale-slate: #C1CAD6;
+    --white: #FFFFFF;
+
+    /* -- Semantic Design Variables -- */
+
+    /* Backgrounds */
+    --bg-main: var(--white);
+    --bg-section-alt: var(--pale-slate);
+    --bg-dark: var(--dusty-grape);
+
+    /* Typography */
+    --text-primary: #1A1A24;
+    /* A slightly darker custom shade for better readability than pure Dusty Grape */
+    --text-secondary: var(--dusty-grape);
+    --text-light: var(--white);
+
+    /* Accents & Buttons */
+    --btn-primary: var(--hot-fuchsia);
+    --btn-primary-hover: #D80C44;
+    /* Slightly darker fuchsia for hover states */
+    --accent-cool: var(--sky-blue);
+
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+}
+
+@media(min-width:320px) {
+    header {
+        background-color: var(--bg-main);
+        color: var(--text-secondary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        justify-content: space-between;
+        margin: 1rem;
+    }
+
+    nav {
+        display: flex;
+        gap: var(--space-l);
+        justify-content: space-between;
+        align-self: center;
+
+    }
+
+    a:active,
+    a:hover {
+        color: var(--accent-cool);
+    }
+
+    a {
+        color: var(--text-secondary);
+        text-decoration: none;
+    }
+
+    .logo {
+        height: 30%;
+        width: 30%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: var(--bg-dark);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .content>div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-l);
+        text-align: center;
+    }
+
+    .content>div:first-child>h1 {
+        color: var(--text-light);
+    }
+
+    .content>div:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .content>div>button {
+        background-color: var(--btn-primary);
+        padding: 1rem 1.5rem;
+        width: fit-content;
+        border: none;
+        color: var(--text-light);
+    }
+
+    .hero-img {
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 400px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .features-sec {
+        background-color: var(--bg-section-alt);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features-sec>div:first-child {
+        text-align: center;
+    }
+
+    .features-sec>div:last-child {
+        display: flex;
+        overflow: auto;
+        gap: 2rem;
+        padding: 2rem;
+        overflow-y: hidden;
+        
+    }
+
+    .card {
+        background-color: var(--white);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1rem, 2vw, 1.5rem);
+        width: clamp(280px, 90vw, 400px);
+        padding: clamp(1.25rem, 4vw, 2rem);
+    }
+
+    .card>.icon {
+        width: clamp(2.5rem, 4vw, 4rem);
+        height: clamp(2.5rem, 4vw, 4rem);
+    }
+
+    footer {
+        background-color: var(--bg-dark);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1rem, 2vw, 1.5rem);
+        padding: clamp(2.5rem, 5vw, 5rem) 0;
+        justify-content: space-between;
+        overflow-y: hidden;
+
+    }
+
+    footer>h1 {
+        color: var(--text-light);
+    }
+
+    footer>p {
+        margin: 1rem;
+    }
+
+    footer>button {
+        background-color: var(--btn-primary);
+        padding: 1rem 1.5rem;
+        width: fit-content;
+        border: none;
+        color: var(--text-light);
+    }
+}
+
+@media(min-width:768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr minmax(0,1200px) 1fr;
+        grid-template-rows: 100px 2fr 20rem;
+        grid-template-areas:
+            ". header ."
+            ". main ."
+            "footer footer footer";
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .content>div:last-child{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .features-sec>div:last-child{
+        justify-content: center;
+    }
+
+}

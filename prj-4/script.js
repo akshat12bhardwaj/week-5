@@ -1,0 +1,114 @@
+/// <reference types='gsap' />
+
+const tl = gsap.timeline()
+
+tl.from('.logo',{
+    y:-200,
+    opacity:0.5,
+    scale:0.5,
+    duration:1,
+    ease:"power1.out"
+})
+.from('nav>a',{
+    x:-200,
+    opacity:0,
+    duration:0.8,
+    ease:"power1.out",
+    stagger:{
+        each:0.2,
+        from:"start"
+    }
+})
+.from('header>p',{
+    opacity:0,
+    scale:0,
+    duration:1,
+    ease:"power1.out"
+})
+.from('.hero-section',{
+    x:300,
+    ease:"power2.out",
+    duration:1,
+    opacity:0,
+})
+.from('.content>div:first-child>p',{
+    opacity:0,
+    ease:"power2.out",
+    duration:0.8
+})
+.from('.content>div:first-child>h1',{
+    opacity:0,
+    ease:"power2.out",
+    duration:0.8
+})
+.from('.hero-img',{
+    scale:0.5,
+    opacity:0,
+    ease:'power2.out'
+})
+.from('.content>div:last-child',{
+    scale:0.7,
+    opacity:0,
+    duration:0.8,
+    ease:"power1.out",
+    stagger:{
+        each:0.2,
+        from:"start"
+    }
+})
+.from('.features-sec',{
+    x:-300,
+    ease:"power2.out",
+    duration:1,
+    opacity:0,
+})
+.from('.features-sec>div:first-child>h1',{
+    scale:0.5,
+    duration:1,
+    opacity:0,
+    ease:"power3.out"
+})
+.from('.features-sec>div:first-child>p',{
+    scale:0.5,
+    duration:1,
+    opacity:0,
+    ease:"power3.out"
+})
+.from('.features-sec>div:last-child>.card',{
+    y:200,
+    opacity:0,
+    duration:0.8,
+    ease:"power1.out",
+    stagger:{
+        each:0.2,
+        from:"start"
+    }
+})
+.from('footer',{
+    y:200,
+    opacity:0,
+    scale:0.5,
+    duration:1,
+    ease:"power4.out"
+})
+.from('footer>h1',{
+    y:200,
+    opacity:0,
+    scale:0.5,
+    duration:1,
+    ease:"power4.out"
+})
+.from('footer>p',{
+    y:200,
+    opacity:0,
+    scale:0.5,
+    duration:1,
+    ease:"power4.out"
+})
+.from('footer>button',{
+    y:200,
+    opacity:0,
+    scale:0.5,
+    duration:1,
+    ease:"power4.out"
+})
